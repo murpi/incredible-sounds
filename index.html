@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ah coucou !</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+  <!--   These are your sounds. Upload new ones in the assets folder, then copy the link to the file in for the relevant sound # here. Want to add more sounds? Just copy and paste the bottom <audio></audio> section and replace the sound #/URL. -->
+  <audio id="sound1" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fmiaou.mp3?v=1588083508341" preload="auto"></audio>
+  <audio id="sound2" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fhi-han.mp3?v=1588083508691" preload="auto"></audio>
+  <audio id="sound3" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fcheval.mp3?v=1588083508835" preload="auto"></audio>
+  <audio id="sound4" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fcarpe.mp3?v=1588083508956" preload="auto"></audio>
+  <audio id="sound5" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fcoin.mp3?v=1588083508987" preload="auto"></audio>
+  <audio id="sound6" src="https://cdn.glitch.com/6c711911-3ab3-4cfc-86e4-8bdfd4663b65%2Fouaf.mp3?v=1588083509563" preload="auto"></audio>
+
+  <div id="intro">
+    <h1>Ah coucou !</h1>
+  </div>
+
+  <!--   This is your audio board. Make sure to rename each button when you change a sound. To create more sounds, copy the last row, and change the sound number. -->
+  <div id="board">
+    <button onclick="document.getElementById('sound1').play()" class="sound-pad 1">Miaou</button>
+    <button onclick="document.getElementById('sound2').play()" class="sound-pad 2">Hi Han</button>
+    <button onclick="document.getElementById('sound3').play()" class="sound-pad 3">Hihihihi</button>
+    <button onclick="document.getElementById('sound4').play()" class="sound-pad 4">Blop blop</button>
+    <button onclick="document.getElementById('sound5').play()" class="sound-pad 5">Coin coin</button>
+    <button onclick="document.getElementById('sound6').play()" class="sound-pad 6">Ouaf ouaf</button>
+  <!--   This is the stop button ! -->  
+    <button onclick="document.getElementById('sound1').pause();
+                      document.getElementById('sound2').pause();
+                      document.getElementById('sound3').pause();
+                      document.getElementById('sound4').pause();
+                      document.getElementById('sound5').pause();
+                      document.getElementById('sound6').pause()" class="sound-pad 7">STOP</button>
+  </div>
+
+
+</body>
+
+</html>
